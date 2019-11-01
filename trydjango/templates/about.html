@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h1>About</h1>
+
+
+<p>
+{{ my_text|title }} <br>
+{{ my_number }} <br>
+{{my_html|safe}}
+<ul>
+{% for my_item in my_list %}
+<li> {{forloop.counter}} {{my_item}} </li>
+{% endfor %}
+</ul>
+</p>
+
+
+{% endblock content %}
