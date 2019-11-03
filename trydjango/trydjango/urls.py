@@ -26,6 +26,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('products/', include('products.urls')),
     path('blog/', include('blog.urls')),
+    path('blog/', include('courses.urls')),
     #path('initial/', render_initial_data),
     #path('product/', product_detail_view),
 ]
